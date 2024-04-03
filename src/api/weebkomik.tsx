@@ -46,7 +46,7 @@ export const GenreManga = async () => {
 export const DetailManga = async (endpoint: string) => {
   try {
     const detail = await axios.get(
-      `${apiKey}/manga/detail/${endpoint}`
+      `${apiKey}/manga/${endpoint}`
     );
     return detail.data;
   } catch (err) {
@@ -58,7 +58,7 @@ export const DetailManga = async (endpoint: string) => {
 export const ChapterManga = async (endpoint: string) => {
   try {
     const detail = await axios.get(
-      `${apiKey}/chapter/${endpoint}`
+      `${apiKey}/ch/${endpoint}`
     );
     return detail.data;
   } catch (err) {
